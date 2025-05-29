@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background-image: url("../img/fondo web.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.linea{
+	background-color: #fff;
+	text-align: center;	
+}
+
+#header {
+    width: 100%;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    animation-name:stranger;
+	animation-duration: 10s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes stranger {
+	from{background-color: #007BFF}
+	to{background-color:#FF6F00}
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.encabezado img{
+	widht: 100%;
+	height: auto;
+}
+.nav li {
+    float:left;
+	width:20%;
+	text-align: center;
+	position: relative;
+}
+
+.nav li a {
+    display:block;
+	padding: 18px 0px;
+	color: black;
+	text-decoration:none;
+	  
+}
+
+.nav li a:hover {
+    background-color: #021EF9;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav li ul {
+	display:none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width:150px;
+	background-color: #FF6F00;
+	z-index: 1000;
+}
+
+.nav li:hover > ul{
+    display: block;
+    font-family:'Poppins', sans-serif;
+	visibility: visible
+}
+
+.nav li ul li {
+	position: relative;
+	background-color: #FF6F00;
+}
+
+.nav li ul li ul {
+	top:0px;
+	right:100%;
+}
+
+.parallax{
+	height:500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
